@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bottom_navigation_bar/bottom_navigation_bar.dart';
+import 'package:jjag_gung/calculate/choice1.dart';
 import 'package:jjag_gung/detail_box/blueberry_box.dart';
 import 'package:jjag_gung/detail_box/greek_box.dart';
 import 'package:jjag_gung/navigation/diet.dart';
@@ -352,7 +353,10 @@ class Home extends StatelessWidget {
                           Text("전체보기",
                               style: TextStyle(color: Color(0xFFFF9E9E))),
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => Choice1()));
+                              },
                               icon: Icon(
                                 Icons.keyboard_arrow_right,
                                 color: Color(0xFFFF9E9E),

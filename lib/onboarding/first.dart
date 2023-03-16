@@ -3,8 +3,23 @@ import 'package:jjag_gung/navigation/home.dart';
 import 'package:jjag_gung/onboarding/second.dart';
 import 'package:jjag_gung/onboarding/splash.dart';
 
-class First extends StatelessWidget {
+class First extends StatefulWidget {
   const First({super.key});
+
+  @override
+  State<First> createState() => _FirstState();
+}
+
+class _FirstState extends State<First> {
+  var _one = Color(0xFFD9D9D9);
+  var _two = Color(0xFFD9D9D9);
+  var _three = Color(0xFFD9D9D9);
+  var _four = Color(0xFFD9D9D9);
+  var _five = Color(0xFFD9D9D9);
+  var _six = Color(0xFFD9D9D9);
+  var _seven = Color(0xFFD9D9D9);
+  var _eight = Color(0xFFD9D9D9);
+  var _nine = Color(0xFFD9D9D9);
 
   @override
   Widget build(BuildContext context) {
@@ -138,10 +153,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_one == Color(0xFFD9D9D9)) {
+                              _one = Color(0xffFFCECE);
+                            } else {
+                              _one = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic1.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _one,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -158,10 +181,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_two == Color(0xFFD9D9D9)) {
+                              _two = Color(0xffFFCECE);
+                            } else {
+                              _two = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic2.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _two,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -178,10 +209,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_three == Color(0xFFD9D9D9)) {
+                              _three = Color(0xffFFCECE);
+                            } else {
+                              _three = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic3.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _three,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -203,10 +242,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_four == Color(0xFFD9D9D9)) {
+                              _four = Color(0xffFFCECE);
+                            } else {
+                              _four = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic4.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _four,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -223,10 +270,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_five == Color(0xFFD9D9D9)) {
+                              _five = Color(0xffFFCECE);
+                            } else {
+                              _five = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic5.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _five,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -243,10 +298,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_six == Color(0xFFD9D9D9)) {
+                              _six = Color(0xffFFCECE);
+                            } else {
+                              _six = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic6.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _six,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -268,10 +331,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_seven == Color(0xFFD9D9D9)) {
+                              _seven = Color(0xffFFCECE);
+                            } else {
+                              _seven = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic7.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _seven,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -288,10 +359,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_eight == Color(0xFFD9D9D9)) {
+                              _eight = Color(0xffFFCECE);
+                            } else {
+                              _eight = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: Image.asset('images/pic/pic8.png'),
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _eight,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
@@ -308,10 +387,18 @@ class First extends StatelessWidget {
                       width: 90,
                       height: 90,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            if (_nine == Color(0xFFD9D9D9)) {
+                              _nine = Color(0xffFFCECE);
+                            } else {
+                              _nine = Color(0xFFD9D9D9);
+                            }
+                          });
+                        },
                         child: null,
                         style: ElevatedButton.styleFrom(
-                            primary: Color(0xFFD9D9D9),
+                            primary: _nine,
                             elevation: 0.0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5))),
