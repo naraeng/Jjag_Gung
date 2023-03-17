@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jjag_gung/calculate/choice1.dart';
+import 'package:jjag_gung/match/select_symptom.dart';
+import 'package:jjag_gung/navigation/home.dart';
 
 class Select_Medicine extends StatefulWidget {
   const Select_Medicine({super.key});
@@ -8,6 +11,16 @@ class Select_Medicine extends StatefulWidget {
 }
 
 class _Select_MedicineState extends State<Select_Medicine> {
+  var _one = Color(0xFFD9D9D9);
+  var _two = Color(0xFFD9D9D9);
+  var _three = Color(0xFFD9D9D9);
+  var _four = Color(0xFFD9D9D9);
+  var _five = Color(0xFFD9D9D9);
+  var _six = Color(0xFFD9D9D9);
+  var _seven = Color(0xFFD9D9D9);
+  var _eight = Color(0xFFD9D9D9);
+  var _nine = Color(0xFFD9D9D9);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +34,10 @@ class _Select_MedicineState extends State<Select_Medicine> {
                 fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
           ),
           leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Choice1()));
+              },
               icon: Icon(
                 Icons.arrow_back,
                 color: Color(0xFFFF9E9E),
@@ -30,10 +46,16 @@ class _Select_MedicineState extends State<Select_Medicine> {
           actions: [
             Row(
               children: [
-                Icon(
-                  Icons.close,
-                  color: Color(0xFFFF8080),
-                ),
+                IconButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomePage()));
+                    },
+                    icon: Icon(
+                      Icons.close,
+                      color: Color(0xFFFF9E9E),
+                      //size: 23,
+                    )),
                 SizedBox(
                   width: 20,
                 )
@@ -97,7 +119,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: Image.asset('images/supplements.png'),
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -117,7 +139,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: Image.asset('images/pill2.png'),
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -142,7 +164,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: Image.asset('images/pill3.png'),
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -162,7 +184,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: null,
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -171,7 +193,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     ),
                   ),
                   SizedBox(height: 8),
-                  Text("재채기")
+                  Text("")
                 ],
               ),
               SizedBox(width: 30),
@@ -182,7 +204,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: null,
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -191,7 +213,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     ),
                   ),
                   SizedBox(height: 8),
-                  Text("열")
+                  Text("")
                 ],
               ),
             ],
@@ -207,7 +229,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: null,
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -216,7 +238,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     ),
                   ),
                   SizedBox(height: 8),
-                  Text("기침")
+                  Text("")
                 ],
               ),
               SizedBox(width: 30),
@@ -227,7 +249,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: null,
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -236,7 +258,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     ),
                   ),
                   SizedBox(height: 8),
-                  Text("인후염")
+                  Text("")
                 ],
               ),
               SizedBox(width: 30),
@@ -247,7 +269,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     height: 90,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Image.asset('images/pill.png'),
+                      child: null,
                       style: ElevatedButton.styleFrom(
                           primary: Color(0xFFD9D9D9),
                           elevation: 0.0,
@@ -256,7 +278,7 @@ class _Select_MedicineState extends State<Select_Medicine> {
                     ),
                   ),
                   SizedBox(height: 8),
-                  Text("해당없음")
+                  Text("")
                 ],
               ),
             ],
@@ -266,7 +288,10 @@ class _Select_MedicineState extends State<Select_Medicine> {
             width: 350,
             height: 48,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Select_Symptom()));
+              },
               child: Text(
                 "다음",
                 style: TextStyle(fontSize: 17),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:jjag_gung/main.dart';
+import 'package:jjag_gung/match/select_medicine.dart';
 import 'package:jjag_gung/navigation/home.dart';
 
 class Choice1 extends StatefulWidget {
@@ -160,7 +161,12 @@ class _Choice1State extends State<Choice1> {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 50, 50, 50),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Select_Medicine()));
+                },
                 icon: Icon(Icons.add, color: Colors.black, size: 50)),
           ),
           Row(
